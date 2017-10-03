@@ -1,0 +1,227 @@
+
+
+/*NAV*/
+
+.navbar-default .navbar-nav > li > a {
+    letter-spacing: 6px;
+    font-family: 'basic title font';
+    font-weight: 600;
+    color: #0d0d0d;
+    font-size: 14px;
+}
+
+    .navbar-default .navbar-nav > li > a:hover {
+        background-color: #91D3E7;
+    }
+
+.navbar-brand {
+    letter-spacing: 9px;
+    font-family: 'basic title font';
+    font-weight: 800;
+    font-size: 15px;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 17px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+.navbar-form {
+    border: 0px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*MAIN*/
+.col-xs-12 {
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+#content {
+    margin-top: 75px;
+    background-color: #728BAA;
+    border-top: 35px solid #728BAA;
+}
+
+#velkommen {
+    margin-top: 120px;
+    border: 3px solid;
+    margin-bottom: -45px;  
+    
+}
+
+
+
+.kat-a {
+    font-family: 'open sans';
+    letter-spacing: 3px;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 40px; 
+  
+    
+}
+
+
+
+.img-responsive {
+    padding-left: 10%;
+    padding-top: 10%;
+    
+}
+
+h2 {
+    font-family: 'open sans';
+    font-size: 26px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+
+h3 {
+    padding-bottom: 20px;   
+    font-size: 20px;
+    color: #fff;
+}
+
+h4 {
+    font-family: 'open sans';
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding-top: 40px;
+    text-align: center;
+    
+}
+
+
+.p-index {
+    font-family: 'open sans';
+    letter-spacing: 2px;
+    font-weight: 700; 
+    font-size: 18px;
+    text-align: center;
+        
+}
+
+p {
+    padding-top: 25px;    
+    font-family: 'Helvetica';
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+.p-pris {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-family: 'open sans';
+    letter-spacing: 2px;
+    font-weight: 700; 
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*FOOTER START*/
+
+footer {
+    margin-top: 10px;
+}
+
+.top-footer {
+    background-color: #cacffa;
+    margin-top: 50px;
+}
+
+
+
+.icons {
+    margin-top: 10px;
+    background-color: #e9ecf2;
+    border-bottom: 1px solid #535151;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+
+.fa-instagram {
+    color: #a446b8;
+}
+
+
+.fa-facebook-square {
+    color: #3f5e9f;
+}
+
+
+.fa-pinterest-square {
+    color: #fa3030;
+}
+
+
+.mail {
+    font-family: 'Open Sans';
+    font-size: 15px;
+    color: #5883de;
+    letter-spacing: 5px;
+    margin-left: 11%;
+}
+
+
+
+
+
+
+
+
+/*�CONTACT*/
+
+#kontakt-formular {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+}
+
+
+
+.contact-input {
+    height: 60px;
+    margin-left: 8%;
+    margin-bottom: 5%;
+}
+
+
+.btn {
+    background-color: #37464B;
+    color: #FFFFFF;
+    font-family: 'Open Sans';
+    margin-bottom: 50px;
+}
+
+
+.btn-index {
+    width: 60%;
+    height: 50px;
+    margin-left: 20%;
+}
