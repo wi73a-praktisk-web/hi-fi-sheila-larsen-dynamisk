@@ -59,7 +59,8 @@
                           <h4>${item.navn}</h4>
                           <img class="img-responsive" src="./img-hifi/${item.billede}">
                         </a>
-                        <p class="p-pris">${item.pris} sp.</p>
+                        <p class="p-pris">${item.pris} sp.</p>  
+                        <a href="produkter.html?produkt=${item.id}"><button class="btn btn-index">Læs mere</button></a>                  
                         </div>`
 
 
@@ -137,7 +138,7 @@
         else if (getUrlParameter("kategori")) {                                  //specifik kategori//
             getOneCat(getUrlParameter("kategori"));
         }
-        else if (getUrlParameter("find")) {                                  //specifik kategori//
+        else if (getUrlParameter("find")) {                                  //søg kategori/producent/produkt//
             findProd(getUrlParameter("find"));
         }
         else {

@@ -57,18 +57,22 @@
     <!---------------------------------------------MAIN START---------------------------------------------->
     <main>
 
-                  
-                <div id="velkommen" class="container"><h2>Kontakt</h2></div>
-                <div class="container" id="content">  
-      <h3>Skriv til os</h3>
-            <div id="kontakt-formular">
-               
 
-                <form action="" method="post" name="contact" id="contact" onSubmit="return formular(this);">
+        <div id="velkommen" class="container">
+            <h2>Kontakt</h2>
+            <p class="p-index">Trut truttelut og bummelum.</p>
+        </div>
+        
+        <div class="container" id="content">
+            <h3>Skriv til os</h3>
+
+            <div id="kontakt-formular">
+                <div id="kontakt-svar"></div>
+                <form action="" name="kontakt" id="kontakt" onSubmit="return formular(this);">
 
                     <div class="row">
 
-                        <input class="col-xs-10 col-xs-offset-2 contact-input" type="text" id="name" placeholder="Dit navn">
+                        <input class="col-xs-10 col-xs-offset-2 contact-input" type="text" id="navn" placeholder="Dit navn">
                         <span id="navne_validering"></span>
 
                     </div>
@@ -84,18 +88,18 @@
 
                     <div class="row">
 
-                        <textarea class="col-xs-10 col-xs-offset-2 contact-input" name="message" id="message" placeholder="Din besked"></textarea>
+                        <textarea class="col-xs-10 col-xs-offset-2 contact-input" name="Besked" id="besked" placeholder="Din besked"></textarea>
                         <span id="besked_validering"></span>
 
                     </div>
 
 
-                    <button class="col-xs-8 col-xs-offset-2 btn" type="submit" id="send" value="Send">
+                    <button class="col-xs-8 col-xs-offset-2 btn btn-index" type="submit" id="send" value="Send">
                         Send
                     </button>
                 </form>
             </div>
-        </div> 
+        </div>
 
 
 
