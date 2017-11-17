@@ -1,1 +1,0 @@
-# hi-fi-sheila-larsen-dynamisk

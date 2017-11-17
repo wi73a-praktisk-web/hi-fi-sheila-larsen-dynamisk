@@ -1,5 +1,7 @@
 # Projektopgave HI-FI
 
+## DEL 1:
+
 > ## **TEKNISKE KRAV/DESIGN & LAYOUT**
 Jeg startede med at lave skitser af hvordan jeg _troede_ siderne skulle se ud. Det eneste jeg endte med at bruge fra skitserne, var navbaren. 
 Det er først i forbindelse med dette projekt, at jeg er begyndt at forstå hvordan det **statiske** og det **dynamiske** differentierer sig fra hinanden - eller rettere, _hvor_ og _hvordan_ man bruger det ene og det andet. 
@@ -489,3 +491,50 @@ if (afsted){
 
 ```
 
+
+
+--- 
+
+## DEL 2:
+
+### **ARBEJDSPLAN**
+
+
+
+| MANDAG   |    TIRSDAG    | ONSDAG          |   TORSDAG       |   FREDAG        |  
+|----------|:-------------:|:---------------:|:---------------:|:---------------:|
+|Kravspec. |HTML/CSS       |Progr. af moduler|Progr. af moduler|Progr. af moduler|
+|Wireframe |Database       |Progr. af moduler|Progr. af moduler|Progr. af moduler|
+|  
+
+    
+
+    
+
+### **KRAVSPECIFIKATIONER**
+
+
+> **OPRETTELSE**
+
+Man skal kunne oprette nye _**produkter**_ i databasen.
+
+Der skal være validering med javascript.
+
+Man skal kunne vælge _**kategori**_ og _**producent**_ via en dropdown. 
+
+Alle produkter fra databasen vises på siden, med en **RET** og en **SLET** knap ud for hvert produkt.
+
+> **REDIGERING**
+
+Ved klik på **RET**-knappen, kommer man ind på en redigeringsside.
+
+Man skal kunne redigere eksisterende _**produkter**_ i databasen.
+
+Der skal være validering med javascript.
+
+
+> **FJERNELSE** 
+
+Man skal kunne fjerne et produkt fra databasen.
+
+Der skal være en alert, som spørger om man er sikker på, at man vil slette.
