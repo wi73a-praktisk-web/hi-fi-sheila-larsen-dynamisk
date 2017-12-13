@@ -16,40 +16,41 @@
 
 
 <body>
-<div class="container">
-    <h1 class="admin-h1">LOG IND</h1>
-</div>
-    <form>
+    <div class="container">
+        <h1 class="admin-h1">LOG IND</h1>
+    </div>
+    <form id="loginForm">
         <div class="container login">
             <div class="form-group">
                 <label class="login-text">BRUGERNAVN:</label>
-                <input type="text" class="form-control" id="username" required>
-                
+                <input type="text" class="form-control" id="username">
+                <span id="brugernavnHelp"></span>
+
             </div>
             <div class="form-group">
                 <label for="pwd" class="login-text">PASSWORD:</label>
-                <input type="password" class="form-control" id="pwd" required>
+                <input type="password" class="form-control" id="pwd">
+                <span id="passwordHelp"></span>
             </div>
             <div class="checkbox">
                 <label class="login-box">
                     <input type="checkbox">Husk mig
                 </label>
             </div>
-            <button type="submit" class="btn login-btn"><a href="admin_produkt.html">SEND</a></button>
+            <button type="submit" class="btn login-btn">SEND</button>
         </div>
     </form>
     <div class="container">
-    <button class="login-back-btn"><a href="index.html">Tilbage til forsiden</a></button>
+        <button class="login-back-btn">
+            <a href="index.html">Tilbage til forsiden</a>
+        </button>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/kontakt.js"></script>
+    <script src="./js/login.js"></script>
 
 </body>
 
 </html>
-
-

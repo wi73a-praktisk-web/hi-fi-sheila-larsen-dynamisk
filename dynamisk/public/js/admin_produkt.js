@@ -57,6 +57,8 @@ function opretProdukt(event) {
       let navn = document.querySelector('#produktNavn').value;
       let beskrivelse = document.querySelector('#produktBeskrivelse').value;
       let pris = document.querySelector('#produktPris').value;
+      let kategori = document.querySelector('#produktKategori').value;
+      let producent = document.querySelector('#produktProducent').value;      
       // ERSTAT KOMMA MED PUNKTUM, SÅ isNaN FUNKTIONEN FUNGERER HENSIGTSMÆSSIGT //
       pris = pris.replace(',', '.');
       if (navn != '' && beskrivelse != '' && !isNaN(pris)) {

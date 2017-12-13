@@ -538,3 +538,16 @@ Der skal være validering med javascript.
 Man skal kunne fjerne et produkt fra databasen.
 
 Der skal være en alert, som spørger om man er sikker på, at man vil slette.
+
+
+---
+
+## DEL 2 - FORTSAT (11.12.17):
+
+- [x] **HENT** ALLE PRODUKT(ER) FRA DATABASE
+- [x] **HENT/REDIGER** PRODUKT (hentet) FRA DATABASE
+- [x] **OPRET** PRODUKT (Inkl. navn, pris, beskrivelse, kategori og producent) I DATABASE
+- [ ] **OPRET** BILLEDER TIL DATABASE
+- [x] **LOGIN** MED VALIDERING
+
+
