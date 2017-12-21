@@ -5,7 +5,7 @@ function formular(form) {
 
     if (form.navn.value === "") {
         form.navn.focus();
-        document.getElementById("navne_validering").innerHTML = "Skriv dit navn";
+        document.getElementById("navne_validering").innerHTML = "Skriv dit navn!";
         document.getElementById("navn").style.backgroundColor = "#d64a58";
         afsted = false;
     }

@@ -21,76 +21,108 @@ Jeg prøvede i begyndelsen af projektet at flette en mappestruktur sammen, vha. 
 **DYNAMISK**
 
 ```
-DYNAMISK (mappe)
+HI-FI-SHEILA-LARSEN-DYNAMISK
 |
 |
-└────────PUBLIC (mappe)
-│        │   
-│        |
-|        └────────CSS (mappe)
-|        |        ... bootstrap-theme.min.css (fil)
-|        |        ... bootstrap.min.css (fil)
-|        |        ... stylesheet.css (fil)
-|        |
-|        └────────FONTS (mappe)
-|        |        ... glyphicons-halflings-regular.eot  (fil)
-|        |        ... glyphicons-halflings-regular.svg  (fil)
-|        |        ... glyphicons-halflings-regular.ttf  (fil)
-|        |        ... glyphicons-halflings-regular.woff (fil)
-|        |        ... glyphicons-halflings-regular.woff2(fil)
-│        |
-|        └────────IMG-HIFI (mappe)
-|        |        ... img
-|        |        ... img
-|        |        ... etc.
-|        | 
-|        |
-|        └────────JS (mappe) 
-│        |       ... index.js
-|        |       ... kontakt.js
-|        |       ... produkter.js
-|        |       ... search.js
-|        |
-|        |
-|        |
-|        | ... index.html
-|        | ... kontakt.html  
-|        | ... produkter.html 
+└───DYNAMISK (mappe)
+|     |
+|     └────────PUBLIC (mappe)
+│     |           │   
+│     |           |
+|     |           └────────CSS (mappe)
+|     |           |        ... admin.css (fil)
+|     |           |        ... bootstrap-theme.min.css (fil)
+|     |           |        ... bootstrap.min.css (fil)
+|     |           |        ... stylesheet.css (fil)
+|     |           |
+|     |           └────────FONTS (mappe)
+|     |           |        ... glyphicons-halflings-regular.eot  (fil)
+|     |           |        ... glyphicons-halflings-regular.svg  (fil)
+|     |           |        ... glyphicons-halflings-regular.ttf  (fil)
+|     |           |        ... glyphicons-halflings-regular.woff (fil)
+|     |           |        ... glyphicons-halflings-regular.woff2(fil)
+│     |           |
+|     |           └────────IMG-HIFI (mappe)
+|     |           |        ... img
+|     |           |        ... img
+|     |           |        ... etc.
+|     |           | 
+|     |           |
+|     |           └────────JS (mappe) 
+|     |           |         ... admin_produkt.js (fil)
+│     |           |         ... brugere.js (fil)
+│     |           |         ... index.js (fil)
+|     |           |         ... kontakt.js (fil)
+|     |           |         ... login.js (fil)
+|     |           |         ... logud.js (fil)
+|     |           |         ... produkter.js (fil)
+|     |           |        ... search.js (fil)
+|     |           |
+|     |           |
+|     |           | ... admin_produkt.html (fil)
+|     |           | ... brugere.html (fil)
+|     |           | ... index.html (fil)
+|     |           | ... kontakt.html (fil) 
+|     |           | ... login.html (fil)
+|     |           | ... produkter.html (fil) 
+|     |
+|     |
+|     |
+|     |...  app.js (fil)
+|     |...  hifi.sql (fil)
+|     |...  package.json (fil)
+|     |...  README.md (fil)
+│     |...  .gitignore (fil)
+│ 
+| 
+| 
 |
-|
-└────────NODE_MODULES (mappe)  
-|
-|
-│ ...  README.md (fil)
-│ ...  package.json (fil)
-| ...  app.js (fil)     
+└────────NODE_MODULES (mappe)      
     
 ```
 
 **API**
 
 ```
-API (mappe)
+HI-FI-SHEILA-LARSEN-API
 |
 |
-└────────CONFIG (mappe)
-│               ... sql.js (fil)
-│         
-│   
-│   
-└────────ROUTES (mappe)
-|               ... index.js (fil)
-|               ... produkt.js (fil)
-|               ... kontakt.js (fil)
+|
+└────API (mappe)
+|      |
+|      |
+|      |
+|      |
+|      └────────CONFIG (mappe)
+|      |          ... sql.js (fil)
+|      │         
+|      └────────IMAGES (mappe)
+|      |               ... img   
+|      |               ... img
+|      │               ... etc.
+|      │   
+|      └────────ROUTES (mappe)
+|      |               ... admin_produkt.js (fil)
+|      |               ... brugere.js (fil)
+|      |               ... index.js (fil)
+|      |               ... kontakt.js (fil)
+|      |               ... login.js (fil)
+|      |               ... produkt.js (fil)
+|      │  
+|      │ ...  package.json (fil)
+|      | ...  app.js (fil)          
+|      |  
+|      └────────NODE_MODULES (mappe) 
+|
+|
+└────────NODE_MODULES (mappe) 
 |  
-└────────NODE_MODULES (mappe)  
-|
-|
-│ ...  README.md (fil)
-│ ...  package.json (fil)
-| ...  app.js (fil)     
-    
+└────────.gitignore (fil) 
+|  
+└────────README.md (fil) 
+
 ```
+
 
 
 ---
@@ -430,7 +462,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 #### _KONTAKT.HTML_
 
-_**Denne del er ikke færdig**_
 
 **På min kontakt.html er der:**
 * En navbar med søgefelt
@@ -440,8 +471,9 @@ _**Denne del er ikke færdig**_
 
 
 
+**PROBLEMER MED KONTAKTSIDEN:**
 
-**DEN SATTE INFO IND I DATABASEB UANSET OM FELTERNE VAR TOMME ELLER FYLDT UD**
+DEN SATTE INFO IND I DATABASEB UANSET OM FELTERNE VAR TOMME ELLER FYLDT UD (vist nedenunder)
 
 ```javascript
 
@@ -539,12 +571,29 @@ Man skal kunne fjerne et produkt fra databasen.
 
 Der skal være en alert, som spørger om man er sikker på, at man vil slette.
 
+> **KONTAKT**
+
+Man skal kunne skrive en besked, som  bliver sat ind i databasen.
+
+Der skal være validering der gør afsenderen opmærksom på felter der mangler at blive udfyldt.
+
+Der skal være en takke-besked, når afsenderens besked er gået igennem.
+
+> **LOGIN**
+
+Man skal kunne logge ind på admin-siden.
+
+Der skal være validering som gør brugeren opmærksom på felter der mangler at blive udfyldt.
+
+Der skal være validering som gør brugeren opmærksom på forkert indtastet brugernavn/kodeord.
+
 
 ---
 
 ## DEL 2 - FORTSAT (11.12.17):
 
 - [x] **HENT** ALLE PRODUKT(ER) FRA DATABASE
+- [x] **KONTAKT** BESKEDER BLIVER SAT IND I DATABASE
 - [x] **HENT/REDIGER** PRODUKT (hentet) FRA DATABASE
 - [x] **OPRET** PRODUKT (Inkl. navn, pris, beskrivelse, kategori og producent) I DATABASE
 - [ ] **OPRET** BILLEDER TIL DATABASE

@@ -7,8 +7,18 @@ function getParameterByName(navn, url) {
       if (!results[2]) return '';
       return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
+(() => {
+      document.addEventListener("DOMContentLoaded", () => {
+            if (!localStorage.getItem("userid") && !localStorage.getItem("token")) {
+                  window.location.assign("index.html");
+            }
+
+      })
+})();
 
 
+
+//REDIGER PRODUKT//
 function opdaterProdukt(event) {
       event.preventDefault();
       let navn = document.querySelector('#produktNavn').value;
@@ -52,13 +62,15 @@ function opdaterProdukt(event) {
       }
 }
 
+
+//OPRET PRODUKT//
 function opretProdukt(event) {
       event.preventDefault();
       let navn = document.querySelector('#produktNavn').value;
       let beskrivelse = document.querySelector('#produktBeskrivelse').value;
       let pris = document.querySelector('#produktPris').value;
       let kategori = document.querySelector('#produktKategori').value;
-      let producent = document.querySelector('#produktProducent').value;      
+      let producent = document.querySelector('#produktProducent').value;
       // ERSTAT KOMMA MED PUNKTUM, SÅ isNaN FUNKTIONEN FUNGERER HENSIGTSMÆSSIGT //
       pris = pris.replace(',', '.');
       if (navn != '' && beskrivelse != '' && !isNaN(pris)) {
@@ -143,6 +155,45 @@ document.addEventListener("DOMContentLoaded", event => {
              <textarea class="form-control input-xs" type="text" name="produktBeskrivelse" id="produktBeskrivelse">${json[0].beskrivelse}</textarea>
              </div>
              </div>
+
+             <div class="form-group">
+             <label class="col-xs-6 control-label login-text">Kategori: </label>
+             <div class="col-xs-6">     
+             <select id="produktKategori" class="form-control input-xs no-border-radius" type="text" name="produktKategori" placeholder="">
+             </div> 
+             <option>Vælg</option>
+                 <option value="1">CD Afspillere</option>
+                 <option value="2">DVD Afspillere</option>
+                 <option value="3">Effektforstærkere</option>
+                 <option value="4">Forforstærkere</option>
+                 <option value="5">Højtalere</option>
+                 <option value="6">Intforstærkere</option>
+                 <option value="7">Pladespillere</option>
+                 <option value="8">Rørforstærkere</option>             
+             </select>
+            
+         </div>
+   
+         <div class="form-group">
+         <label class="col-xs-6 control-label login-text">Producent: </label>   
+         <div class="col-xs-6">   
+         <select id="produktProducent" class="form-control input-xs input-xs no-border-radius" type="text" name="produktProducent" placeholder="">
+         </div> 
+         <option>Vælg</option>
+             <option value="1">Creek</option>
+             <option value="2">Exp</option>
+             <option value="3">Exposures</option>
+             <option value="4">Parasound</option>
+             <option value="5">Manley</option>
+             <option value="6">Project</option>
+             <option value="7">Boesendorfer</option>
+             <option value="8">Epos</option>
+             <option value="9">Harbeth</option>
+             <option value="10">Pro-Ject</option>
+             <option value="11">Jolida</option>
+         </select>
+         
+     </div>
                 
           
                 <button class="btn login-btn">Gem</button>

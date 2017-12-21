@@ -2,20 +2,20 @@ function formular(form) {
     checker = true;
     "use strict";
     if (form.username.value.length === 0) {
-        document.getElementById("brugernavnHelp").innerHTML = "Udfyld dit brugernavn";
+        document.getElementById("brugernavnValid").innerHTML = "Skriv dit brugernavn";
         form.username.focus(); //sætter markøren i det valgte felt
         checker = false;
         return false;
     } else {
-        document.getElementById("brugernavnHelp").innerHTML = "";
+        document.getElementById("brugernavnValid").innerHTML = "";
     }
     if (form.pwd.value.length === 0) {
-        document.getElementById("passwordHelp").innerHTML = "Udfyld dit password";
+        document.getElementById("passwordValid").innerHTML = "Skriv dit password";
         form.pwd.focus(); //sætter markøren i det valgte felt
         checker = false;
         return false;
     } else {
-        document.getElementById("brugernavnHelp").innerHTML = "";
+        document.getElementById("brugernavnValid").innerHTML = "";
     }
     return false;
 };
@@ -52,8 +52,8 @@ function formular(form) {
                         localStorage.setItem('token', data.AccessToken);
                         localStorage.setItem('userid', data.ID);
                         // alert('du vil nu blive logget ind og sendt videre til kontrolpanelet');
-                        if (data.message == "forkert brugernavn eller kodeord") {
-                            document.getElementById("brugernavnHelp").innerHTML = data.message;                            
+                        if (data.message == "FORKERT BRUGERNAVN ELLER KODEORD") {
+                            document.getElementById("brugernavnValid").innerHTML = data.message;                            
                         }
                         else{
                             window.location.assign("http://localhost:3000/admin_produkt.html");

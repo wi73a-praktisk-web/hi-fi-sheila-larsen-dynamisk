@@ -13,7 +13,7 @@
 
 
 .login-text {
-    margin-top: 15px;
+    margin-top: 25px;
     font-size: 15px;
     color: rgb(146, 146, 146);
     font-weight: 400;
@@ -91,3 +91,16 @@
     font-size: 13px;
 
 }
+
+.admin-h1 {
+    font-size: 35px;
+    font-family: "open sans";
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+
+
+
+
+
